@@ -1,5 +1,6 @@
 package edu.alex.java;
 
+import edu.alex.java.utils.IO;
 import edu.alex.java.utils.StringUtils;
 
 /**
@@ -23,6 +24,17 @@ public enum Food
                 return c;
         }
         return null;//throw exception.
+    }
+
+    public static Food fromUserInt() {
+        //return new Colors(n);
+        int n = IO.getInt("Enter 1 for GRAINS, 2 for MEAT, 3 for GRASS", 1, 3);
+        for (Food c : values()) {
+            if (c.aVal == n)
+                return c;
+        }
+        return null;//throw exception.
+
     }
 
     @Override

@@ -7,7 +7,7 @@ public class Cow extends Animal
 {
     public Cow(String name)
     {
-        super(Food.fromInt(3), name);
+        super(Food.fromUserInt(), name);
 
     }
     public void makeSound()
