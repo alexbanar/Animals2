@@ -7,7 +7,7 @@ public class Cow extends Animal
 {
     public Cow(String name)
     {
-        super(Food.GRASS, name);
+        super(Food.fromInt(3), name);
 
     }
     public void makeSound()
@@ -18,7 +18,7 @@ public class Cow extends Animal
     @Override
     public String toString() {
         return super.toString() +
-                " ,sounds '" + "Moo" + '\'' +
+                ", sounds '" + "Moo" + '\'' +
                 '}';
     }
 }

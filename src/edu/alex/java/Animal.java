@@ -5,8 +5,6 @@ package edu.alex.java;
  */
 public abstract class Animal
 {
-    public enum Food{GRAINS, MEAT, GRASS}
-
     private Food food;
     private String name;
 
