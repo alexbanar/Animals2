@@ -6,7 +6,7 @@ public class Main {
     {
 	    // write your code here
 
-        Cow cow = new Cow(Animal.Food.GRASS, "Milka", "Moo");
+        Cow cow = new Cow("Milka");
 
         cow.eat();
         cow.makeSound();
